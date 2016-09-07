@@ -1,0 +1,45 @@
+---------------------  LASSO RESULTS  --------------------- 
+
+Below we present the results of our computation using Lasso approach. To comply
+with the requests, we made multiple predictions, over a sliding window of 10
+days. We computed the average MAPE results in two situations: with retraining
+and without retraining.
+
+
+---  With retraining:
+
+Training over 0:840, testing over 840:850
+	product 1: 21.5795295776
+	product 2: 51.9263803273
+
+Training over 0:850, testing over 850:860
+	product 1: 21.1158857944
+	product 2: 50.5249526859
+
+Training over 0:860, testing over 860:870 [this was the presented result]
+	product 1: 17.3691498775
+	product 2: 36.734607778
+
+Average MAPE results
+	Prodotto_1: 20,0215
+	Prodotto_2: 46,3953
+
+
+---  Without retraining (i.e., training over 0:840, testing on different windows):
+
+Testing over 840:850
+	product 1: 21.5795295776
+	product 2: 51.9263803273
+
+Testing over 850:860
+	product 1: 21.2116145397
+	product 2: 51.1197163668
+
+Testing over 860:870
+	product 1: 19.9028933268
+	product 2: 43.1274415005
+
+Average MAPE results
+	Prodotto_1: 20,8980
+	Prodotto_2: 48,7245
+
